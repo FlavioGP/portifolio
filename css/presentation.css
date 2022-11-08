@@ -1,0 +1,131 @@
+/* menu options */
+
+.menu-options {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    flex-direction: row-reverse;
+    z-index: 1;
+}
+
+.menu-label {
+    display: flex;
+    background-color: var(--blue-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.menu-options input[type="checkbox"] {
+    display: none;
+}
+
+
+
+.options {
+    display: flex;
+    background-color: var(--blue-color);
+    margin-right: 15px;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    overflow: hidden;
+    transition: ease-in .6s;
+    width: 0;
+}
+
+.menu-options input[type="checkbox"]:checked + .options {
+    width: 170px;
+    padding: 5px;
+}
+
+
+
+.options li {
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.options li:hover {
+    margin: auto 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* Main presentation */
+
+
+.content-top,
+.content-bottom {
+    padding: 20px;
+    position: relative;
+}
+
+.content-top {
+    background-color: var(--white-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content-top h2,
+.content-bottom h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content-top span {
+    border-bottom: 3px solid var(--blue-color);
+    width: max-content;
+    padding-bottom: 10px;
+}
+
+.content-top p {
+    margin: 40px 0 13px;
+    font-size: 1.6rem;
+}
+
+/* DOING */
+
+.content-bottom {
+    background-color: #eee;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 23px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    width: 100%;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    height: 100px;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.6rem;
+}
+
+.icons {
+    font-size: 5rem;
+    color: var(--blue-color);
+    margin-right: 10px;
+}
+
+.description {
+    max-height: 100px;
+}
+.description p span {
+    color: var(--blue-color);
+}
